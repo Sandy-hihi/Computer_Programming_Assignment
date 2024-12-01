@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def Draw_Graph(subject):
+
+def draw_graph(subject):
     mandata = Extract_data_man(subject)
     womandata = Extract_data_woman(subject)
 
