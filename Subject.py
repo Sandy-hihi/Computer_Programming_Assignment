@@ -22,7 +22,7 @@ def print_subject():  # 과목을 출력하는 함수
         else:
             break
         
-    return Enter_Subject
+    return enter_subject
 
 
 def extract_data_man(subject):
@@ -44,4 +44,3 @@ def extract_data_woman(subject):
             woman_data[int(row[2].strip())]=int(row[4].strip())
     return woman_data
     
-
