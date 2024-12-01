@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import Subject as Sb
 
 plt.rc('font', family='NanumGothic')
-print(plt.rcParams['font.family'])
 
 
 def draw_graph(subject):
