@@ -1,10 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import Subject as Sb
 
 
 def draw_graph(subject):
-    mandata = Extract_data_man(subject)
-    womandata = Extract_data_woman(subject)
+    mandata = Sb.extract_data_man(subject)
+    womandata = Sb.extract_data_woman(subject)
 
     mscores = np.array(list(mandata.keys()))
     mcounts = np.array(list(mandata.values()))
