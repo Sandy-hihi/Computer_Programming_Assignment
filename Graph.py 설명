@@ -1,0 +1,11 @@
+csv파일을 분석해서 딕셔너리로 돌려준다는 것을 알고있는 상태로 문제 해결을 진행합니다.
+import numpy as np
+import matplotlib.pyplot as plt
+import Subject as Sb
+그래프를 만들기 위해matplotlb를 임포트하고 딕셔너리를 다루기 위해 numpy를 임포트하고 csv파일을 분석하는 모듈인 Subject도 임포트 합니다.
+그래프를 만드는 함수 안에는 
+ mandata = Sb.extract_data_man(subject)
+ womandata = Sb.extract_data_woman(subject)
+건네 받은 모듈을 이용해 데이터를 입력 받고 딕셔너리의 키와 값을 나눠서 저장합니다.
+남자와 여자의 그래프를 그리는 코드를 만들고 저장한 값들을 이용합니다.
+좀 더 그래프를 깔끔하게 꾸미기 위해서 작업을 하고 그래프를 출력합니다.
