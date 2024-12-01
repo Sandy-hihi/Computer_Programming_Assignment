@@ -1,0 +1,7 @@
+main.py 파일 설명
+
+우선 Subject와 Graph 파일을 모듈로서 import하였다. (Sb, Gp)
+그 다음 Sb의 extract_subject()함수를 이용해 그 리턴값을 subjects 리스트에 담았다.
+Sb의 print_subject()를 통해 subjects 내 과목들을 출력하고 사용자가 그중에서 선택해 입력할 수 있도록 했다.
+그리고 그 답안을 main함수의 selected_sub변수에 저장한 다음,
+Gp의 draw_graph를 사용해 선택한 과목의 시험 표준점수에 따른 성별 별 학생 수의 분포를 그래프로 출력하였다.
