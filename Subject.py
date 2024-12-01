@@ -9,6 +9,7 @@ def extract_subject():  # 과목 이름들을 리스트에 넣는 함수
         if row[1] not in subjects and row[1] != '유형':
             subjects.append(row[1])
     f.close()
+    return subjects
 
 
 def print_subject():  # 과목을 출력하는 함수
