@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import Subject2 as Sb
+
+
 def plot_bar_graph():
     # 과목 선택
     subject = Sb.print_subject()

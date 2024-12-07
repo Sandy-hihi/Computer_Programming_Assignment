@@ -11,6 +11,7 @@ def input_year():
         print('2020 / 2021 / 2022 / 2023 중 하나를 입력하세요.')
         return input_year()
 
+
 def extract_subject():  # 과목 이름들을 리스트에 넣는 함수
     year = input_year()
     f = open(f'{year}1231.csv')
