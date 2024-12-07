@@ -5,11 +5,11 @@ import Subject2 as Sb
 
 def plot_bar_graph():
     # 과목 선택
-    subject = Sb.print_subject()
+    subject, year = Sb.print_subject()
 
     # 남성 및 여성 데이터 추출
-    mandata = Sb.extract_data_man(subject)
-    womandata = Sb.extract_data_woman(subject)
+    mandata = Sb.extract_data_man(subject, year)
+    womandata = Sb.extract_data_woman(subject, year)
 
     # 점수와 인원수를 numpy 배열로 변환
     scores = sorted(set(mandata.keys()).union(set(womandata.keys())))
@@ -20,6 +20,7 @@ def plot_bar_graph():
     x = np.arange(len(scores))
     bar_width = 0.4
 
+    plt.rcParams['font.family'] = 'Malgun Gothic'   # 한글 작성을 위해 폰트를 맑은 고딕으로 변경
     plt.figure(figsize=(12, 6))
     plt.bar(x - bar_width / 2, mcounts, width=bar_width, label="Male", color="blue")
     plt.bar(x + bar_width / 2, wcounts, width=bar_width, label="Female", color="orange")
