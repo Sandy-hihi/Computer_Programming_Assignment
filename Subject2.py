@@ -42,8 +42,8 @@ def extract_data_man(subject):
     reader = csv.reader(f)
     man_data = {}
     for row in reader:
-        if row[1]==subject:
-            man_data[int(row[2].strip())]=int(row[3].strip())
+        if row[1] == subject:
+            man_data[int(row[2].strip())] = int(row[3].strip())
     return man_data
 
 
@@ -53,6 +53,6 @@ def extract_data_woman(subject):
     reader = csv.reader(f)
     woman_data = {}
     for row in reader:
-        if row[1]==subject:
-            woman_data[int(row[2].strip())]=int(row[4].strip())
+        if row[1] == subject:
+            woman_data[int(row[2].strip())] = int(row[4].strip())
     return woman_data
